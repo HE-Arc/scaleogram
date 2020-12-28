@@ -29,7 +29,7 @@ CBAR_DEFAULTS = {
 }
 
 COI_DEFAULTS = {
-        'alpha':'0.5',
+        'alpha':0.5,
         'hatch':'/',
 }
 
@@ -270,7 +270,7 @@ def cws(time, signal=None, scales=None, wavelet=None,
         if cbarlabel:
             colorbar.set_label(cbarlabel)
 
-    return ax
+    return fig, ax
 
 
 cws.__doc__ = """
